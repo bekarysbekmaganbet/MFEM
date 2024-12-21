@@ -3,16 +3,16 @@
 // Compile with: make allencahn
 //
 // Sample runs:  allencahn
-//               allencahn -m ../data/square-disc.mesh
-//               allencahn -m ../data/star.mesh
-//               allencahn -m ../data/ref-square.mesh
+//               allencahn -m square-disc.mesh
+//               allencahn -m star.mesh
+//               allencahn -m ref-square.mesh
 //
-//               allencahn -m ../data/square-disc-surf.mesh
-//               allencahn -m ../data/star-surf.mesh
-//               allencahn -m ../data/mobius-strip.mesh
+//               allencahn -m square-disc-surf.mesh
+//               allencahn -m star-surf.mesh
+//               allencahn -m mobius-strip.mesh
 //
-//               allencahn -m ../data/fichera.mesh
-//               allencahn -m ../data/ref-prism.mesh
+//               allencahn -m fichera.mesh
+//               allencahn -m ref-prism.mesh
 //
 // Note:         For visualization, a glvis server should be active when running the code.
 //               As the initial condition is randomly generated, 
@@ -32,7 +32,7 @@ double J(FiniteElementSpace *fes, GridFunction &u, double eps);
 int main(int argc, char *argv[])
 {
    // 1. Parse command-line options.
-   const char *mesh_file = "../data/square-disc.mesh";
+   const char *mesh_file = "square-disc.mesh";
    bool visualization = true;
 
    double eps = 0.04;   // eps = epsilon from the model
