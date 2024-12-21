@@ -80,3 +80,7 @@ where $tol$ is a predetermined tolerance. The norm and $\nabla J$ above are take
 ### Results
 We tested our algorithm on a variety of meshes. Input parameters: $\varepsilon = 0.4$ and exit tolerance `tol=0.05`.
 The initial condition $u^0_h$ was taken to be a `GridFunction` with random coefficients generated from the uniform distribution on the interval (-0.95,0.95).
+
+!
+[This is](/star-init.png)
+!
